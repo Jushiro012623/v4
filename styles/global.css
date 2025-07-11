@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-black-500;
+}
+
+.curve {
+  .svg,
+  .background {
+    width: 100vw;
+    height: calc(100vh + 600px);
+    top: -300px;
+    left: 0;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999999;
+  }
+}
+.bg-card {
+  background-color: rgb(15, 23, 42);
+  background-image: radial-gradient(
+      at 28% 4%,
+      rgb(13, 148, 136) 0,
+      transparent 43%
+    ),
+    radial-gradient(at 60% 19%, rgb(21, 94, 117) 0, transparent 53%),
+    radial-gradient(at 66% 68%, rgb(87, 83, 78) 0, transparent 58%),
+    radial-gradient(at 92% 36%, rgb(20, 184, 166) 0, transparent 90%),
+    radial-gradient(at 80% 66%, rgb(253, 186, 116) 0, transparent 32%),
+    radial-gradient(at 97% 100%, rgb(147, 197, 253) 0, transparent 58%);
+}
+.link-text {
+  position: relative;
+}
+
+.link-text::after {
+  content: "";
+  background-color: #fff; /* Tailwind's neutral-800 */
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 1.5px;
+  width: 100%;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 300ms cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.link-text:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
