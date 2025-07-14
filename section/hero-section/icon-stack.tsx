@@ -1,9 +1,8 @@
 import Image from "next/image";
-import { techStack } from "./data";
 import { useRef } from "react";
-import { useTechStackFloting } from "./hooks";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { techStack } from "./data";
 const IconStack = () => {
   const iconRefs = useRef<(HTMLDivElement | null)[]>([]);
 
