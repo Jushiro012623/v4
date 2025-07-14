@@ -7,14 +7,14 @@ export const projects = [
     color: "gradient-1",
     img: "shadow-lg shadow-neutral-800"
   },
-  {
-    title: "Triumph Co.",
-    description: "Triump is your go-to thrift shop where you can find a wide range of thrifted products at unbeatable prices, offering unique, high-quality items that fit every budget and style",
-    src: "triumph-no-bg.png",
-    url: "#",
-    color: "gradient-2",
-    img: "shadow-lg"
-  },
+//   {
+//     title: "Triumph Co.",
+//     description: "Triump is your go-to thrift shop where you can find a wide range of thrifted products at unbeatable prices, offering unique, high-quality items that fit every budget and style",
+//     src: "triumph-no-bg.png",
+//     url: "#",
+//     color: "gradient-2",
+//     img: "shadow-lg"
+//   },
   {
     title: "Barangay Management",
     description:
@@ -31,6 +31,24 @@ export const projects = [
     src: "udm-no-bg.png",
     url: "#",
     color: "gradient-1",
+    img: "shadow-lg"
+  },
+  {
+    title: "Iphone 15 Website Clone",
+    description:
+      "This clone website replicates the official Apple iPhone 15 Pro product page, showcasing its stunning design, powerful specs, and immersive animations to mirror the premium feel of Apple’s own site.",
+    src: "iphone.png",
+    url: "https://iphone-clone-green.vercel.app/",
+    color: "gradient-2",
+    img: "shadow-lg"
+  },
+  {
+    title: "Zentry Website Clone",
+    description:
+      "Zentry unites every player from countless games and platforms, fostering a vibrant community where collaboration and competition thrive across diverse virtual worlds.",
+    src: "zentry.png",
+    url: "https://zentry-inky.vercel.app/",
+    color: "gradient-2",
     img: "shadow-lg"
   },
  
