@@ -15,7 +15,7 @@ export default function Project() {
   return (
     <main
       ref={container}
-      className={`max-w-7xl mx-auto relative mt-[5vh] mb-[50vh]`}>
+      className={`max-w-7xl mx-auto relative mt-[5vh]`}>
       {projects.map((project, i) => {
         const targetScale = 1 - (projects.length - i) * 0.05;
         return (

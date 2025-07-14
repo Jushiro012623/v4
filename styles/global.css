@@ -9,7 +9,17 @@
 }
 
 body {
-  @apply bg-black-500;
+  background-color: rgb(10, 15, 25); /* almost black base */
+  background-image: radial-gradient(
+      at 17% 98%,
+      rgb(20, 25, 35) 0,
+      transparent 31%
+    ),
+    radial-gradient(at 85% 54%, rgb(15, 20, 18) 0, transparent 36%),
+    radial-gradient(at 29% 80%, rgb(10, 18, 14) 0, transparent 93%),
+    radial-gradient(at 51% 61%, rgb(14, 16, 8) 0, transparent 64%),
+    radial-gradient(at 49% 21%, rgb(25, 25, 30) 0, transparent 2%),
+    radial-gradient(at 69% 25%, rgb(30, 32, 35) 0, transparent 75%);
 }
 
 .curve {
@@ -23,19 +33,6 @@ body {
     pointer-events: none;
     z-index: 999999;
   }
-}
-.bg-card {
-  background-color: rgb(15, 23, 42);
-  background-image: radial-gradient(
-      at 28% 4%,
-      rgb(13, 148, 136) 0,
-      transparent 43%
-    ),
-    radial-gradient(at 60% 19%, rgb(21, 94, 117) 0, transparent 53%),
-    radial-gradient(at 66% 68%, rgb(87, 83, 78) 0, transparent 58%),
-    radial-gradient(at 92% 36%, rgb(20, 184, 166) 0, transparent 90%),
-    radial-gradient(at 80% 66%, rgb(253, 186, 116) 0, transparent 32%),
-    radial-gradient(at 97% 100%, rgb(147, 197, 253) 0, transparent 58%);
 }
 .link-text {
   position: relative;
@@ -58,3 +55,64 @@ body {
   transform-origin: bottom left;
   transform: scaleX(1);
 }
+
+.gradient-1 {
+  background-color: rgb(10, 15, 25); /* very dark navy base */
+  background-image: radial-gradient(
+      at 28% 4%,
+      rgba(20, 30, 30, 1) 0%,
+      transparent 43%
+    ),
+    radial-gradient(at 60% 19%, rgb(18, 35, 45) 0%, transparent 53%),
+    radial-gradient(at 66% 68%, rgb(30, 28, 26) 0%, transparent 58%),
+    radial-gradient(at 92% 36%, rgb(22, 40, 38) 0%, transparent 90%),
+    radial-gradient(at 80% 66%, rgb(40, 30, 20) 0%, transparent 32%),
+    radial-gradient(at 97% 100%, rgb(45, 55, 75) 0%, transparent 58%);
+}
+.gradient-2 {
+  background-color: rgb(10, 15, 25); /* almost black base */
+  background-image: radial-gradient(
+      at 17% 98%,
+      rgb(20, 25, 35) 0,
+      transparent 31%
+    ),
+    radial-gradient(at 85% 54%, rgb(15, 20, 18) 0, transparent 36%),
+    radial-gradient(at 29% 80%, rgb(10, 18, 14) 0, transparent 93%),
+    radial-gradient(at 51% 61%, rgb(14, 16, 8) 0, transparent 64%),
+    radial-gradient(at 49% 21%, rgb(25, 25, 30) 0, transparent 2%),
+    radial-gradient(at 69% 25%, rgb(30, 32, 35) 0, transparent 75%);
+}
+.gradient-3 {
+  background-color: rgb(5, 15, 20); /* almost black with teal tint */
+  background-image: radial-gradient(
+      at 61% 1%,
+      rgb(10, 15, 25) 0%,
+      transparent 98%
+    ),
+    radial-gradient(at 29% 42%, rgb(8, 20, 25) 0%, transparent 84%),
+    radial-gradient(at 20% 35%, rgb(20, 25, 40) 0%, transparent 12%),
+    radial-gradient(at 53% 8%, rgb(8, 18, 17) 0%, transparent 19%),
+    radial-gradient(at 77% 87%, rgb(10, 20, 25) 0%, transparent 56%),
+    radial-gradient(at 25% 83%, rgb(20, 25, 40) 0%, transparent 61%);
+}
+.gradient-4 {
+  background-color: rgb(5, 10, 25); /* very dark navy base */
+  background-image: radial-gradient(
+      at 33% 54%,
+      rgb(20, 30, 60) 0%,
+      transparent 5%
+    ),
+    radial-gradient(at 89% 88%, rgb(15, 20, 35) 0%, transparent 50%),
+    radial-gradient(at 86% 52%, rgb(25, 30, 50) 0%, transparent 10%),
+    radial-gradient(at 90% 45%, rgb(30, 35, 70) 0%, transparent 16%),
+    radial-gradient(at 53% 54%, rgb(10, 30, 50) 0%, transparent 25%),
+    radial-gradient(at 17% 10%, rgb(15, 40, 80) 0%, transparent 47%);
+}
+
+.black-gradient {
+  @apply bg-gradient-to-r from-black  via-black-600 to-black;
+}
+.white-gradient {
+  @apply bg-gradient-to-r  from-white-500  via-white to-white-500;
+}
+

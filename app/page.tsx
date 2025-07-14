@@ -8,6 +8,7 @@ import { useFadeTransition } from "@/hooks/useFadeTransition";
 import HeroSection from "@/section/hero-section";
 import Project from "@/section/projects";
 import IconStack from "@/components/icon-stack";
+import About from "@/section/about";
 
 const Home = () => {
   useSmoothScoll();

@@ -28,6 +28,7 @@ export class Particle {
     gsap.to(this, {
       y: this.canvasHeight + 10, // Animate to beyond bottom
       duration,
+      backgroundColor: "",
       ease: "none",
       onComplete: () => {
         this.reset();
