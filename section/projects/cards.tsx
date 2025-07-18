@@ -3,7 +3,6 @@
 import Image from "next/image";
 import useCardScale from "./hooks";
 import { anton } from "@/lib/fonts";
-import { BentoTilt } from "@/components/bento";
 
 const Card = ({ title, description, src, url, i, color, targetScale }: any) => {
   const { imageRef, cardRef, container } = useCardScale(targetScale);
@@ -27,7 +26,7 @@ const Card = ({ title, description, src, url, i, color, targetScale }: any) => {
             </a>
           </div>
 
-          <BentoTilt
+          <div
             className={`relative w-full flex-grow md:w-[60%] h-full rounded-3xl overflow-hidden shadow-lg ${color} border border-white/20`}>
             <div className={`w-full h-full`} ref={imageRef}>
               <Image
@@ -37,7 +36,7 @@ const Card = ({ title, description, src, url, i, color, targetScale }: any) => {
                 className="object-cover"
               />
             </div>
-          </BentoTilt>
+          </div>
         </div>
       </div>
     </div>

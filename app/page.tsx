@@ -8,14 +8,13 @@ import { useFadeTransition } from "@/hooks/useFadeTransition";
 import HeroSection from "@/section/hero-section";
 import Project from "@/section/projects";
 import IconStack from "@/components/icon-stack";
-import About from "@/section/about";
+import Blog from "@/section/blog";
 
 const Home = () => {
   useSmoothScoll();
   const heroRef = useRef<any>(null);
   const aboutRef = useRef<any>(null);
   useFadeTransition(heroRef, aboutRef);
-
   return (
     <>
       <Curve />
@@ -30,6 +29,7 @@ const Home = () => {
       <div className="max-w-7xl mx-auto relative">
         <HeroSection ref={heroRef} />
         <Project />
+        <Blog />
       </div>
 
       <IconStack />
